@@ -1,0 +1,10 @@
+:root {
+  --primary: #004890;
+  --primary_lighter: #4590c9;
+  --primary_darker: #032844;
+  --secondary: #da5b00;
+  --gray: #444444;
+  --gray_lighter: #CCCCCC;
+  --gray_lightest: #F1F1F2;
+  --shadow: #8080807d;
+}

@@ -1,0 +1,29 @@
+@supports (display: grid) {
+  .imageGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+.imageGallery img {
+  width: 100%;
+}
+.imageGallery .card {
+  box-shadow: 0px 0px 3px 1px var(--shadow);
+  padding: 1rem;
+}
+@media (min-width: 1500px) {
+  .imageGallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .imageGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .imageGallery {
+    grid-template-columns: 1fr;
+  }
+}
