@@ -8,5 +8,3 @@ Well hello! Here is the "mostly" completed SASS test.
 3. Run `npm-start`
 
 Have fun!
-
-![cover-photo](src/assets/images/readme.jpg)
