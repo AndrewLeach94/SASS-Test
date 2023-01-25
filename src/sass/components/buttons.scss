@@ -1,0 +1,23 @@
+@import "../mixins.scss";
+
+button {
+    background-color: var(--primary_lighter);
+    padding: 1rem 2rem;
+    color: var(--gray_lightest);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    @include box-shadow__center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.button__cta {
+    @extend button;
+    background-color: var(--secondary);
+
+    @include mobile {
+        width: 100%;
+    }
+}

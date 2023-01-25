@@ -1,0 +1,27 @@
+@import "../mixins.scss";
+
+.imageGallery {
+    @supports (display: grid) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    img {
+        width: 100%;
+    }
+    .card {
+        @include box-shadow__center;
+        padding: 1rem;
+    }
+
+    @include xlarge {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,63 @@
+@import "../mixins.scss";
+
+.hero {
+    img {
+        width: 100%;
+    }
+}
+
+header {
+    @include container-padding;
+    margin: 3rem 0;
+    h2 {
+        font-size: 1.3rem;
+        margin-left: 9.5rem;
+        font-weight: 100;
+    }
+
+    @include mobile {
+        h2 {
+            margin-left: 0;
+        }
+    }
+}
+
+#about {
+    @include section-margin;
+}
+
+#examples {
+    @include section-margin;
+}
+
+#locations {
+    @include section-margin;
+}
+
+nav {
+    border-bottom: solid 1px var(--gray_lighter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem 0rem 15rem;
+    
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 1rem;
+            list-style-type: none;
+        }
+    }
+    a {
+        color: var(--gray);
+        font-weight: 700;
+    }
+
+    @include tablet {
+        padding: 0rem 3rem;
+    }
+    @include mobile {
+        padding: 0rem 2rem;
+    }
+}
